@@ -1,0 +1,88 @@
+:root {
+  --text: #2B3044;
+  --line: #275EFE;
+  --font-size: 16px;
+  --duration: .44s;
+  --duration-line: .84s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+@keyframes wave {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes pic_float {
+  0%, 100% {
+    top: 38%;
+  }
+  50% {
+    top: 48%;
+  }
+}
+@keyframes shadow_float {
+  0%, 100% {
+    width: 120px;
+  }
+  50% {
+    width: 180px;
+  }
+}
+@keyframes nav_transform_before {
+  0% {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@keyframes nav_transform_after {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes getting_start {
+  0% {
+    width: 200px;
+    height: 50px;
+    color: orange;
+  }
+  10% {
+    color: rgba(255, 165, 0, 0);
+  }
+  35% {
+    width: 50px;
+    height: 50px;
+    font-size: 1px;
+    color: rgba(255, 165, 0, 0);
+    margin: 35px 150px;
+    right: 0;
+    position: absolute;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    font-size: 1px;
+    color: rgba(255, 165, 0, 0);
+    margin: 35px 150px;
+    position: absolute;
+    right: -250%;
+  }
+}
+
+/*# sourceMappingURL=mixins.css.map */
